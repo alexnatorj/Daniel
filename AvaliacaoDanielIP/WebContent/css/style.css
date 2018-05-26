@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+.margemDivPrincipal {
+    top: 50px;
+    left: 50px;
+    position: absolute;
+}
+
+.linha {
+	width: 100%;
+}
+
+.menu-vertical {
+	width: 250px;
+}
+
+.menu-vertical a {
+	background-color: white;
+	color: black;
+	display: block;
+	padding: 11px;
+	text-decoration: none;
+}
+
+.menu-vertical a:hover {
+	background-color: lightblue; 
+}
+
+.menu-vertical a.active {
+	background-color: lightblue;
+}
+
+.divMenuTabela {
+	display: table;
+}
+
+.divTabelaCelula {
+	display: table-cell;
+}
+
+.divMenuTamanho {
+	width: 300px;
+}
+
+.divMenuLabelTamanho {
+	width: 150px;
+}
+.tamanhoEntradaTexto {
+	width: 200px;
+}
+
+.margemElementos {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.tabelaFiltro {
+	width: 85%;
+	border-spacing: 8px;
+    border-collapse: separate;
+}
+
+.tabelaFiltro td {
+	text-align: center;
+	}
+
+.tabelaFiltro thead {
+	    background-color: lightblue;
+	}
+.tabelaFiltro tr:nth-child(even) {
+	background: lightblue;
+	}
+
+.button {
+	background-color: lightblue; 	
+	border: none;
+	color: white;
+	padding: 3px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+}
+ 
