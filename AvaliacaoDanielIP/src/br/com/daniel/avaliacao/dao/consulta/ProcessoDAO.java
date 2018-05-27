@@ -22,15 +22,12 @@ public class ProcessoDAO extends DAO<Processo>{
 	}
 
 	/**
-	 * Realiza pesquisa de um processo por filtro de numero de publicação e/ou requerente.
+	 * Realiza pesquisa de um processo por filtro de numero de publicaÃ§Ã£o e/ou requerente.
 	 * @param filtro
 	 * @return
 	 */
 	public List<Processo> pesquisarPorFiltro(ProcessoFiltro filtro) {
-		if ( (filtro.getNumeroPublicacao() == null || filtro.getNumeroPublicacao().isEmpty())
-				&& (filtro.getRequerente() == null || filtro.getRequerente().isEmpty() )) {
-			return null;
-		}
+		
 		
 		Session s = HibernateUtil.getSessionFactory().openSession();
 		Criteria c = s.createCriteria(Processo.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
